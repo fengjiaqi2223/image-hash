@@ -9,8 +9,8 @@ images_trans = double(zeros(256, 256, n));
 % k = 8-k; %k为每块block长度
 [ row, column ] = makingGrids(256, 256, 16, 16);
 [ blocking ] = ProduceBlocking(16, 16, row, column, block, 0.25);
-images_org(:, :, 1) = imresize(rgb2gray(imread(['imagepath1'])),[256,256]);
-images_trans(:, :, 1) = imresize(rgb2gray(imread(['imagepath2'])),[256,256]);
+images_org(:, :, 1) = imresize(rgb2gray(imread(['C:\Users\fjq\Documents\WeChat Files\fengjiaqi1995\FileStorage\File\2019-08\新建文件夹(1)\image-hash\datatset\datatset\原图排序\5.bmp'])),[256,256]);
+images_trans(:, :, 1) = imresize(rgb2gray(imread(['C:\Users\fjq\Documents\WeChat Files\fengjiaqi1995\FileStorage\File\2019-08\新建文件夹(1)\image-hash\datatset\datatset\旋转平移噪声\旋转10平移8噪声0.01\4.bmp'])),[256,256]);
 Distance= [];
 %计算原图与变换过后的图像的距离
 images_trans(:, :, 1) = double(images_trans(:, :, 1));
